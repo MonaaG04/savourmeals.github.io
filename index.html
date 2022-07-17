@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.SavourMeals.com</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            z-index: -1;
+            opacity: 0.5;
+            
+        }
+        #logo img{
+            margin:7px 50px;
+            height: 113px;
+        }
+         #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 17px;
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            padding: 4px 20px;
+            display: block;
+            color: aliceblue;
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: white;
+        }
+        #home{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 4px 190px;
+            height: 221px;
+            
+        }
+        body{
+            background-image: url("bgimg.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            
+        }
+        .heading{
+            font-size: 82px;
+        }
+         #home p{
+            font-size:39px;
+            color: bisque;
+            font-style: italic;
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid black;
+            background-color:black ;
+            color:beige;
+            margin: 16px;
+            font-size: 14px;
+            border-radius: 10px;
+            cursor:pointer;
+            opacity: 0.5;
+        }
+        .table{
+            font-size: 34px;
+            padding: 15px;
+        }
+        .facilities{
+            display: flex;
+            margin: 401px 5px 2px auto;
+            justify-content: center;
+            color:blanchedalmond; 
+            background-color: black;
+            opacity: 0.5;
+            font-size: 15px;
+        }
+        #facilities.box{
+            
+            margin:12px;
+            padding:5px 12px;
+            height:10px;
+            
+            border: 2px solid black;
+        }
+        #facilities.box img{
+            height:100px;
+            display: block;
+            margin:30px;
+            height: 12px;
+            width:10px;
+        }
+
+      #facilities{
+        margin: auto;
+      }
+
+      .center{
+        font-size: 26px;
+        color: white;
+        text-align: center;
+      }
+
+      #contact-box{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 30px;
+      }
+      #contact-box label{
+        font-size: 20px;
+        font-style: bold;
+        color: antiquewhite;
+        padding: 6px;
+        margin: 12px auto;
+      }
+    .buttom{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+       
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#menu">Menu</a></li>
+            <div id="logo">
+                <img src="logo.jpeg">
+            </div>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="heading">Welcome foodies!</h1>
+        <p>always expect </p>
+        <p>GREAT TASTE, GOOD TIMES </p>
+        <button class="btn">Join us</button>
+    </section>
+    <section class="facilities">
+        <div id="facilities">
+            <div class="box1">
+                <img src="tableorder.png" alt="">
+                <h2 class="table">Table Ordering </h2>
+                <p> Ditch physical menus and reduce contact </p>
+                <p>between staff and customers.</p>
+                <p>Customers can scan a QR code</p>
+                <p> to access your digital menus.</p>
+            </div>
+            
+        </div>
+        <div id="facilities">
+            <div class="box2">
+                <img src="pickup.jpg" alt="">
+                <h2 class="table">Takeaway </h2>
+                <p>Allow your customers to order ahead </p>
+                <p> reduce the crowding at your store.</p>
+            </div>
+            
+        </div>
+
+        <div id="facilities">
+            <div class="box3">
+                <img src="cuisine4.jpg"alt="">
+                <h2 class="table">Cuisines </h2>
+                <p>Best dishes from different cuisines that shall </p>
+                <p>make you travel the world.</p>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="contact center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="buttom">
+            Copyright &copy; www.SavourMeals.com.All rights reserved!
+         </div>
+    </footer>
+
+
+   
+    
+
+    
+</body>
+</html>
